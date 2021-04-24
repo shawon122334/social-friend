@@ -13,13 +13,13 @@ const ButtonDetails = () => {
         .then(response=> response.json())
         .then(data=> setPosts(data))
 
-    },[])
+    },[id])
     useEffect(()=>{
         const url=`https://jsonplaceholder.typicode.com/posts?userId=${id}`
         fetch(url)
         .then(response=> response.json())
         .then(data=> setComments(data))
-    },[])
+    },[id])
     return (
         <div>
             <h2>id : {posts.id}</h2>

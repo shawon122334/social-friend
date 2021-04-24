@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router';
 
-const PostDetails = (props) => {
+const PostDetails = (props) => { 
     const {id, title} = props.post;
     const history= useHistory();
     let handleClick=()=>{
